@@ -9,14 +9,7 @@ import UIKit
 
 final class ContactListViewController: UITableViewController {
     
-    private let dataStore = DataStore()
-    private var persons: [Person] = []
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        persons = dataStore.getRandomPersons()
-
-    }
+    private var persons = Person.getRandomPersons()
 
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -25,7 +18,6 @@ final class ContactListViewController: UITableViewController {
         let infoVC = segue.destination as? ContactInfoViewController
         infoVC?.contact = contact
     }
-
 }
 
 // MARK: - UITableViewDataSource

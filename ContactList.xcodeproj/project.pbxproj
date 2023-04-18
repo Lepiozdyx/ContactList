@@ -63,8 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				FA7ED76929EED41100A4D2DE /* Assets.xcassets */,
-				FA7ED77B29EEDB6900A4D2DE /* View Controllers */,
+				FA7ED78029EF366300A4D2DE /* Services */,
 				FA7ED77A29EEDB5500A4D2DE /* Models */,
+				FA7ED77B29EEDB6900A4D2DE /* View Controllers */,
 				FA7ED77529EED44600A4D2DE /* Storyboards */,
 				FA7ED77429EED43500A4D2DE /* App */,
 			);
@@ -94,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				FA7ED77829EEDB4E00A4D2DE /* Contact.swift */,
-				FA7ED77C29EEDE7000A4D2DE /* DataStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -106,6 +106,14 @@
 				FA7ED77E29EF12D000A4D2DE /* ContactInfoViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FA7ED78029EF366300A4D2DE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FA7ED77C29EEDE7000A4D2DE /* DataStore.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
