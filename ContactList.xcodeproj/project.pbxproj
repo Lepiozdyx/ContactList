@@ -15,6 +15,7 @@
 		FA7ED77729EED62100A4D2DE /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED77629EED62100A4D2DE /* ContactListViewController.swift */; };
 		FA7ED77929EEDB4E00A4D2DE /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED77829EEDB4E00A4D2DE /* Contact.swift */; };
 		FA7ED77D29EEDE7000A4D2DE /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED77C29EEDE7000A4D2DE /* DataStore.swift */; };
+		FA7ED77F29EF12D000A4D2DE /* ContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED77E29EF12D000A4D2DE /* ContactInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FA7ED77629EED62100A4D2DE /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		FA7ED77829EEDB4E00A4D2DE /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		FA7ED77C29EEDE7000A4D2DE /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		FA7ED77E29EF12D000A4D2DE /* ContactInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				FA7ED77629EED62100A4D2DE /* ContactListViewController.swift */,
+				FA7ED77E29EF12D000A4D2DE /* ContactInfoViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				FA7ED76129EED41000A4D2DE /* AppDelegate.swift in Sources */,
 				FA7ED77D29EEDE7000A4D2DE /* DataStore.swift in Sources */,
 				FA7ED76329EED41000A4D2DE /* SceneDelegate.swift in Sources */,
+				FA7ED77F29EF12D000A4D2DE /* ContactInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,24 +5,34 @@
 //  Created by Alex on 18.04.2023.
 //
 
-import Foundation
-
 final class DataStore {
-    let names: [String] = ["Ivan", "Evgeny", "Misha", "Sergey", "Petr", "Alex"]
-    let surnames: [String] = ["Apple", "Potato", "Cucumber", "Cherry", "Melon", "Tomato"]
-    let phoneNumbers: [String] = ["111", "222", "333", "444", "555", "666"]
-    let emails: [String] = ["Apple@g.com", "Potato@g.com", "Cucumber@g.com", "Cherry@g.com", "Melon@g.com", "Tomato@g.com"]
+    let names: [String] = ["Gandalf", "Aragorn", "Legolas", "Gimli", "Frodo", "Sam"]
+    let surnames: [String] = ["Grey", "Elessar", "Greenleaf", "Dwarf", "Baggins", "Gamgee"]
+    let phoneNumbers: [String] = ["1-11", "2-22", "3-33", "4-44", "5-55", "6-66"]
+    let emails: [String] = [
+        "valinor@gmail.com",
+        "numenor@gmail.com",
+        "woodland@gmail.com",
+        "erebor@gmail.com",
+        "shire@gmail.com",
+        "shire_hobbiton@gmail.com",
+    ]
     
-    private func getRandomPerson() -> [Person] {
+    func getRandomPersons() -> [Person] {
         var uniquePersons: [Person] = []
         
-        for _ in 0..<names.count {
-            let name = names.randomElement() ?? ""
-            let surname = surnames.randomElement() ?? ""
-            let phoneNumber = phoneNumbers.randomElement() ?? ""
-            let email = emails.randomElement() ?? ""
-            
-            let person = Person(name: name, surname: surname, phoneNumber: phoneNumber, email: email)
+        let names = names.shuffled()
+        let surnames = surnames.shuffled()
+        let phoneNumbers = phoneNumbers.shuffled()
+        let emails = emails.shuffled()
+        
+        for element in 0..<names.count {
+            let person = Person(
+                name: names[element],
+                surname: surnames[element],
+                phoneNumber: phoneNumbers[element],
+                email: emails[element]
+            )
             uniquePersons.append(person)
         }
         
