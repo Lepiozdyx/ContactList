@@ -10,6 +10,7 @@ struct Person {
     let surname: String
     let phoneNumber: String
     let email: String
+    let icon: String
     
     var fullName: String {
         "\(name) \(surname)"
@@ -22,13 +23,15 @@ struct Person {
         let surnames = DataStore.surnames.shuffled()
         let phoneNumbers = DataStore.phoneNumbers.shuffled()
         let emails = DataStore.emails.shuffled()
+        let icons = DataStore.icons.shuffled()
         
         for element in 0..<names.count {
             let person = Person(
                 name: names[element],
                 surname: surnames[element],
                 phoneNumber: phoneNumbers[element],
-                email: emails[element]
+                email: emails[element],
+                icon: icons[element]
             )
             uniquePersons.append(person)
         }

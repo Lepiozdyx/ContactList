@@ -9,7 +9,12 @@ import UIKit
 
 final class ContactListViewController: UITableViewController {
     
-    private var persons = Person.getRandomPersons()
+    var persons: [Person]!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.rowHeight = 60
+    }
 
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -31,6 +36,9 @@ extension ContactListViewController {
         var content = cell.defaultContentConfiguration()
         let person = persons[indexPath.row]
         content.text = person.fullName
+        content.image = UIImage(named: person.icon)
+        content.imageProperties.cornerRadius = tableView.rowHeight / 2
+        content.imageProperties.maximumSize = CGSize(width: CGFloat(20), height: CGFloat(60))
         cell.contentConfiguration = content
         return cell
     }
