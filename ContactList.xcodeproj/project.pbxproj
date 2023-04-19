@@ -16,6 +16,8 @@
 		FA7ED77929EEDB4E00A4D2DE /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED77829EEDB4E00A4D2DE /* Contact.swift */; };
 		FA7ED77D29EEDE7000A4D2DE /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED77C29EEDE7000A4D2DE /* DataStore.swift */; };
 		FA7ED77F29EF12D000A4D2DE /* ContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED77E29EF12D000A4D2DE /* ContactInfoViewController.swift */; };
+		FAC0AF6729F021F800F21278 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0AF6629F021F800F21278 /* TabBarViewController.swift */; };
+		FAC0AF6929F0225800F21278 /* DetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0AF6829F0225800F21278 /* DetailListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		FA7ED77829EEDB4E00A4D2DE /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		FA7ED77C29EEDE7000A4D2DE /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		FA7ED77E29EF12D000A4D2DE /* ContactInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoViewController.swift; sourceTree = "<group>"; };
+		FAC0AF6629F021F800F21278 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		FAC0AF6829F0225800F21278 /* DetailListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 			children = (
 				FA7ED77629EED62100A4D2DE /* ContactListViewController.swift */,
 				FA7ED77E29EF12D000A4D2DE /* ContactInfoViewController.swift */,
+				FAC0AF6629F021F800F21278 /* TabBarViewController.swift */,
+				FAC0AF6829F0225800F21278 /* DetailListViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -191,8 +197,10 @@
 				FA7ED77729EED62100A4D2DE /* ContactListViewController.swift in Sources */,
 				FA7ED76129EED41000A4D2DE /* AppDelegate.swift in Sources */,
 				FA7ED77D29EEDE7000A4D2DE /* DataStore.swift in Sources */,
+				FAC0AF6729F021F800F21278 /* TabBarViewController.swift in Sources */,
 				FA7ED76329EED41000A4D2DE /* SceneDelegate.swift in Sources */,
 				FA7ED77F29EF12D000A4D2DE /* ContactInfoViewController.swift in Sources */,
+				FAC0AF6929F0225800F21278 /* DetailListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
