@@ -16,6 +16,10 @@ struct Person {
         "\(name) \(surname)"
     }
     
+    var rows: [String] {
+        [phoneNumber, email]
+    }
+    
     static func getRandomPersons() -> [Person] {
         var uniquePersons: [Person] = []
         
