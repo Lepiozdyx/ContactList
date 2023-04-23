@@ -19,9 +19,8 @@ final class ContactListViewController: UITableViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
-        let contact = persons[indexPath.row]
         let infoVC = segue.destination as? ContactInfoViewController
-        infoVC?.contact = contact
+        infoVC?.contact = persons[indexPath.row]
     }
 }
 
@@ -35,11 +34,13 @@ extension ContactListViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath)
         var content = cell.defaultContentConfiguration()
         let person = persons[indexPath.row]
+        
         content.text = person.fullName
         content.image = UIImage(named: person.icon)
         content.imageProperties.cornerRadius = tableView.rowHeight / 2
         content.imageProperties.maximumSize = CGSize(width: CGFloat(20), height: CGFloat(60))
         cell.contentConfiguration = content
+        
         return cell
     }
     
