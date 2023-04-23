@@ -18,7 +18,7 @@ final class ContactInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = contact.fullName
+        title = contact.fullName
         iconView.layer.cornerRadius = iconView.frame.height / 2
         phoneLabel.text = "Phone: \(contact.phoneNumber)"
         emailLabel.text = "E-mail: \(contact.email)"
