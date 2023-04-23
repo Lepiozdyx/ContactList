@@ -8,22 +8,19 @@
 import UIKit
 
 final class TabBarViewController: UITabBarController {
-    
-    private let persons = Person.getRandomPersons()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViewControllers()
+    }
+    
+    private func setupViewControllers() {
+        guard let contactListVC = viewControllers?.first as? ContactListViewController else { return }
+        guard let detailListVC = viewControllers?.last as? DetailListViewController else { return }
         
-        viewControllers?.forEach { navigationController in
-            if let navigationVC = navigationController as? UINavigationController,
-               let controller = navigationVC.viewControllers.first {
-                if let contactListVC = controller as? ContactListViewController {
-                    contactListVC.persons = persons
-                } else if let detailListVC = controller as? DetailListViewController {
-                    detailListVC.persons = persons
-                }
-            }
-        }
+        let persons = Person.getRandomPersons()
+        contactListVC.persons = persons
+        detailListVC.persons = persons
     }
 
 }
