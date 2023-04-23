@@ -43,14 +43,14 @@
                             <outlet property="delegate" destination="gSF-Dw-Yds" id="CX3-JM-ePH"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="xrW-t9-A1H"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person.circle.fill" catalog="system" id="xrW-t9-A1H"/>
                     <navigationItem key="navigationItem" title="Persons List" id="Vtd-9O-VOv">
                         <barButtonItem key="backBarButtonItem" title="Back" id="mG1-Cx-bwf"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Md3-vg-yqY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2170.2290076335876" y="-52.112676056338032"/>
+            <point key="canvasLocation" x="3096.9465648854962" y="-52.112676056338032"/>
         </scene>
         <!--Persons List-->
         <scene sceneID="Q0X-GT-KBa">
@@ -88,12 +88,12 @@
                             <outlet property="delegate" destination="2LN-VD-Ewr" id="o9j-dN-IcN"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="c3d-88-V8W"/>
+                    <tabBarItem key="tabBarItem" title="Contact list" image="square.stack.3d.up.fill" catalog="system" id="c3d-88-V8W"/>
                     <navigationItem key="navigationItem" title="Persons List" id="Ekx-bk-mhp"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1HJ-8J-sSJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2170" y="596"/>
+            <point key="canvasLocation" x="3095.419847328244" y="595.77464788732402"/>
         </scene>
         <!--Contact Info View Controller-->
         <scene sceneID="41a-Fp-jqi">
@@ -148,11 +148,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xo3-w8-ohA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2915.2671755725191" y="-52.112676056338032"/>
+            <point key="canvasLocation" x="3841.9847328244273" y="-52.112676056338032"/>
         </scene>
         <!--Contacts-->
         <scene sceneID="jBs-we-rJg">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="utL-ip-6xL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="E0S-np-I1j" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Contacts" image="person.crop.circle.fill" catalog="system" id="yMr-mJ-jqx"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="6G5-SV-dEr">
@@ -160,36 +161,39 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="2K5-BA-4bp" kind="relationship" relationship="rootViewController" id="BN3-UU-8VF"/>
+                        <segue destination="QPH-4D-WP5" kind="relationship" relationship="rootViewController" id="pFA-RJ-fx7"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="utL-ip-6xL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="630" y="279"/>
+            <point key="canvasLocation" x="1521" y="272"/>
         </scene>
-        <!--Tab Bar View Controller-->
-        <scene sceneID="koi-kO-U10">
+        <!--Persons List-->
+        <scene sceneID="eH0-Sa-99y">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="2K5-BA-4bp" customClass="TabBarViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="QPH-4D-WP5" customClass="TabBarViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="zbo-uq-Cvp"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cMF-Qd-KtH">
+                    <navigationItem key="navigationItem" title="Persons List" id="GQS-In-f91">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="tgx-KR-Jkh"/>
+                    </navigationItem>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ckm-Hs-uSG">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="gSF-Dw-Yds" kind="relationship" relationship="viewControllers" id="GQ5-Et-8XT"/>
-                        <segue destination="2LN-VD-Ewr" kind="relationship" relationship="viewControllers" id="nxs-BQ-veR"/>
+                        <segue destination="gSF-Dw-Yds" kind="relationship" relationship="viewControllers" id="fu7-bG-b74"/>
+                        <segue destination="2LN-VD-Ewr" kind="relationship" relationship="viewControllers" id="lRk-2I-Y9Z"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="szg-Wu-RMU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S7L-Sp-0iO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1398" y="279"/>
+            <point key="canvasLocation" x="2282" y="272"/>
         </scene>
     </scenes>
     <resources>
+        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
         <image name="person.crop.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="square.stack.3d.up.fill" catalog="system" width="128" height="125"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
