@@ -13,7 +13,7 @@ final class ContactListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = 60
+        tableView.rowHeight = 50
     }
 
     // MARK: - Navigation
@@ -36,9 +36,6 @@ extension ContactListViewController {
         let person = persons[indexPath.row]
         
         content.text = person.fullName
-        content.image = UIImage(named: person.icon)
-        content.imageProperties.cornerRadius = tableView.rowHeight / 2
-        content.imageProperties.maximumSize = CGSize(width: CGFloat(20), height: CGFloat(60))
         cell.contentConfiguration = content
         
         return cell
